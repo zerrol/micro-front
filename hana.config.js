@@ -17,8 +17,7 @@ module.exports = {
     lessOptions: {
       javascriptEnabled: true,
       modifyVars: {
-        "primary-color": "red",
-        "border-radius": "4px",
+        "primary-color": "#FFBD2E",
       },
     },
   },
