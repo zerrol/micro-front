@@ -1,0 +1,47 @@
+{
+  "name": "react-creater",
+  "version": "1.0.0",
+  "description": "react quick start",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-hana-service start",
+    "build": "react-hana-service build",
+    "eslint": "eslint src --ext .ts,.tsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zerrol/react-creater.git"
+  },
+  "author": "FRozen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zerrol/react-creater/issues"
+  },
+  "homepage": "https://github.com/zerrol/react-creater#readme",
+  "eslintIgnore": [
+    "*.config.js"
+  ],
+  "dependencies": {
+    "@loadable/component": "^5.13.1",
+    "@types/loadable__component": "^5.13.0",
+    "antd": "^4.5.2",
+    "axios": "^0.19.0",
+    "mobx": "^4.15.5",
+    "mobx-react": "^6.2.5",
+    "mockjs": "^1.0.1-beta3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-hot-loader": "^4.12.21",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-router": "^5.0.3",
+    "@types/react-router-dom": "^4.3.5",
+    "react-hana-service": "^0.0.8-alpha.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.7"
+  }
+}
