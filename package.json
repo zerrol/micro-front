@@ -1,7 +1,7 @@
 {
-  "name": "react-creater",
+  "name": "mirco-front",
   "version": "1.0.0",
-  "description": "react quick start",
+  "description": "mirco main project",
   "main": "index.js",
   "scripts": {
     "start": "react-hana-service start",
@@ -29,6 +29,7 @@
     "mobx": "^4.15.5",
     "mobx-react": "^6.2.5",
     "mockjs": "^1.0.1-beta3",
+    "qiankun": "^2.0.20",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-hot-loader": "^4.12.21",

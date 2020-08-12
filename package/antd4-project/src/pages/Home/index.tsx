@@ -23,7 +23,7 @@ export default () => {
   return (
     <div className={style.container}>
       <h3 className={style.hello}> 
-        hello, react {user.name}
+        hello, micro react, this is antd 4
       </h3>
       <p className={style.inputArea}>
         <Input placeholder='hello world' />

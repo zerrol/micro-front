@@ -1,3 +1,5 @@
+const packageName = require('./package.json').name;
+
 module.exports = {
   // 通过 webpack define plugin 定义全局变量
   // define: {
@@ -14,7 +16,16 @@ module.exports = {
   },
 
   devServer: {
-    port: 8081
+    port: 8081,
+    headers: { 'Access-Control-Allow-Origin': '*' }
+  },
+
+  webpackConfig: {
+    output: {
+      library: `${packageName}-[name]`,
+      libraryTarget: 'umd',
+      jsonpFunction: `webpackJsonp_${packageName}`,
+    },
   },
 
   lessLoader: {

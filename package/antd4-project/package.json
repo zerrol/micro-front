@@ -1,7 +1,7 @@
 {
-  "name": "react-creater",
+  "name": "antd4-project",
   "version": "1.0.0",
-  "description": "react quick start",
+  "description": "micro-child-antd4-project",
   "main": "index.js",
   "scripts": {
     "start": "react-hana-service start",

@@ -7,6 +7,10 @@ module.exports = {
   // },
   // devtoolProd: 'cheap-module-eval-source-map',
 
+  devServer: {
+    headers: { 'Access-Control-Allow-Origin': '*' }
+  },
+
   postcss: {
     autoprefixer: {
       overrideBrowserslist: ["last 2 versions"],

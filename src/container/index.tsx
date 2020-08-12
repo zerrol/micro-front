@@ -8,7 +8,7 @@ import { useLocalStore, useObserver } from "mobx-react"
 
 import styles from "./styles.less"
 
-const { Header, Sider, Content } = Layout
+const { Header, Sider } = Layout
 
 export default () => {
   const store = useLocalStore(() => ({
@@ -34,8 +34,9 @@ export default () => {
             <Link to="/fly">async fly</Link>
           </Menu.Item>
           <Menu.Item key="3" >
-            <Icon type="upload" />
-            nav 3
+            <Icon type="search" />
+            <span>micro app</span>
+            <Link to="/microAntd4">micro</Link>
           </Menu.Item>
         </Menu>
       </Sider>
@@ -50,9 +51,11 @@ export default () => {
             {routes.map((route, index) => (
               <Route key={index} {...route} />
             ))}
+
             {asyncRoutes.map((route, index) => (
               <Route key={index} {...route} />
             ))}
+
           </Switch>
         </HashRouter>
       </Layout>

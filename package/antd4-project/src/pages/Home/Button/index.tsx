@@ -1,23 +1,29 @@
 import React, { useEffect } from 'react'
 // import {queryTest} from '@api'
-import { Button } from 'antd'
+import { Button, Modal, Tooltip, message, Popover } from 'antd'
 import { useLocalStore, observer } from 'mobx-react'
 
 import styles from './style.less'
-import { Link } from 'react-router-dom'
 
 export default observer((props: any) =>  {
 
   const store = useLocalStore(() => ({
     num: 1,
+    modalVisible: false,
     init() {
+      console.log('init num', this.num)
       this.num = 233
     },
     add() {
+      console.log('num add', this.num)
       this.num++
     },
     delete() {
       this.num--
+      message.warn('delete success')
+    },
+    triggerModal() {
+      this.modalVisible = !this.modalVisible
     }
   }))
 
@@ -33,21 +39,46 @@ export default observer((props: any) =>  {
       setTimeout(resolve, 100)
     }).then(() => {
       console.log(2)
-      alert('hello')
+      // alert('hello')
     })
+    store.triggerModal()
     console.log(3)
     props?.hello?.()
+  }
+
+  function deleteNum() {
+    Modal.confirm({
+      title: 'Are you sure you want to delete',
+      onOk: store.delete
+    })
   }
 
   return (
     <>
       <div>btn area {store.num}</div>
 
-      {/* <Button type="primary" ghost className={styles.btn} onClick={handleClick}>hello</Button> */}
-      <Link to='/fly'> go to fly </Link>
+      <Tooltip title='hello world'> 
+        <Button type="primary" ghost className={styles.btn} onClick={handleClick}>hello</Button>
+      </Tooltip>
+      {/* <Link to='/fly'> go to fly </Link> */}
 
-      <Button type="primary" onClick={store.add} className={styles.btn}>add num</Button>
-      <Button type="primary" onClick={store.delete}>delete num</Button>
+
+      <Popover content={
+        <div>content</div>
+      } title="Title">
+        <Button type="primary" onClick={store.add} className={styles.btn}>add num</Button>
+      </Popover>
+      <Button type="primary" onClick={deleteNum}>delete num</Button>
+
+      <Modal 
+        visible={store.modalVisible} 
+        onOk={store.triggerModal} 
+        wrapClassName={styles.modal}
+        onCancel={store.triggerModal}> 
+        <div className={styles.hello}>
+          hello modal 
+        </div>
+      </Modal>
     </>
   )
  
