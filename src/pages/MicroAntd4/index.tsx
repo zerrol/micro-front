@@ -16,9 +16,10 @@ export default () => {
           entry: '//localhost:8081',
           container: container.current, 
         }, {
-          // TODO: strictStyleIsolation 开启shadow dom的情况下，需要微应用react事件会失效，需要另外配置
+          // TODO: strictStyleIsolation 开启shadow dom的情况下，需要微应用react 16事件会失效，需要另外配置
           // 由于shadow dom 的原因的，一些原生事件也会失效，例如 resize
-          // sandbox: {strictStyleIsolation: true}
+          // react 17 rc 已支持
+          sandbox: {strictStyleIsolation: true}
         }
       ); 
     }

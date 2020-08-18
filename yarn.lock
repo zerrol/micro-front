@@ -450,7 +450,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.10.4"
 
-"@babel/plugin-syntax-dynamic-import@^7.8.0":
+"@babel/plugin-syntax-dynamic-import@^7.8.0", "@babel/plugin-syntax-dynamic-import@^7.8.3":
   version "7.8.3"
   resolved "https://registry.npm.taobao.org/@babel/plugin-syntax-dynamic-import/download/@babel/plugin-syntax-dynamic-import-7.8.3.tgz#62bf98b2da3cd21d626154fc96ee5b3cb68eacb3"
   integrity sha1-Yr+Ysto80h1iYVT8lu5bPLaOrLM=
@@ -8286,14 +8286,15 @@ react-dom@^16.9.0:
     prop-types "^15.6.2"
     scheduler "^0.15.0"
 
-react-hana-service@^0.0.8-alpha.0:
-  version "0.0.8-alpha.0"
-  resolved "https://registry.npm.taobao.org/react-hana-service/download/react-hana-service-0.0.8-alpha.0.tgz#9552ad43cdbd33840794148fa437f8ff5fd282a7"
-  integrity sha1-lVKtQ829M4QHlBSPpDf4/1/Sgqc=
+react-hana-service@^0.0.9-alpha.0:
+  version "0.0.9-alpha.0"
+  resolved "https://registry.npm.taobao.org/react-hana-service/download/react-hana-service-0.0.9-alpha.0.tgz#3bc84d987a5c754e92cc1f46175ec5e80dde9b49"
+  integrity sha1-O8hNmHpcdU6SzB9GF17F6A3em0k=
   dependencies:
     "@babel/core" "7.11.1"
     "@babel/plugin-proposal-class-properties" "7.10.4"
     "@babel/plugin-proposal-decorators" "7.10.5"
+    "@babel/plugin-syntax-dynamic-import" "^7.8.3"
     "@babel/plugin-transform-runtime" "7.11.0"
     "@babel/preset-env" "7.11.0"
     "@babel/preset-react" "7.10.4"
@@ -8345,7 +8346,7 @@ react-hana-service@^0.0.8-alpha.0:
     webpack-chain "^6.5.1"
     webpack-cli "^3.3.7"
     webpack-dev-server "3.11.0"
-    webpack-merge "^4.2.2"
+    webpack-merge "^5.1.1"
 
 react-hot-loader@^4.12.14, react-hot-loader@^4.12.21:
   version "4.12.21"
@@ -10164,12 +10165,13 @@ webpack-log@^2.0.0:
     ansi-colors "^3.0.0"
     uuid "^3.3.2"
 
-webpack-merge@^4.2.2:
-  version "4.2.2"
-  resolved "https://registry.npm.taobao.org/webpack-merge/download/webpack-merge-4.2.2.tgz#a27c52ea783d1398afd2087f547d7b9d2f43634d"
-  integrity sha1-onxS6ng9E5iv0gh/VH17nS9DY00=
+webpack-merge@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.npm.taobao.org/webpack-merge/download/webpack-merge-5.1.1.tgz#c79f36b4ad39a597c3bb780f809b514d65d85d01"
+  integrity sha1-x582tK05pZfDu3gPgJtRTWXYXQE=
   dependencies:
-    lodash "^4.17.15"
+    clone-deep "^4.0.1"
+    wildcard "^2.0.0"
 
 webpack-sources@^1.1.0, webpack-sources@^1.4.0, webpack-sources@^1.4.1, webpack-sources@^1.4.3:
   version "1.4.3"
@@ -10259,6 +10261,11 @@ wide-align@^1.1.0:
   integrity sha1-rgdOa9wMFKQx6ATmJFScYzsABFc=
   dependencies:
     string-width "^1.0.2 || 2"
+
+wildcard@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/wildcard/download/wildcard-2.0.0.tgz#a77d20e5200c6faaac979e4b3aadc7b3dd7f8fec"
+  integrity sha1-p30g5SAMb6qsl55LOq3Hs91/j+w=
 
 word-wrap@^1.2.3:
   version "1.2.3"

@@ -17,6 +17,7 @@ module.exports = {
 
   devServer: {
     port: 8081,
+    // 微前端访问会有跨域
     headers: { 'Access-Control-Allow-Origin': '*' }
   },
 
@@ -32,7 +33,7 @@ module.exports = {
     lessOptions: {
       javascriptEnabled: true,
       modifyVars: {
-        "primary-color": "red",
+        "primary-color": "#FFBD2E",
         "border-radius": "4px",
       },
     },

@@ -17,12 +17,16 @@ module.exports = {
     },
   },
 
-  lessLoader: {
-    lessOptions: {
-      javascriptEnabled: true,
-      modifyVars: {
-        "primary-color": "#FFBD2E",
-      },
-    },
-  },
+  theme: {
+    "primary-color": "#57D4CE"
+  }
+
+  // lessLoader: {
+  //   lessOptions: {
+  //     javascriptEnabled: true,
+  //     modifyVars: {
+  //       "primary-color": "#FFBD2E",
+  //     },
+  //   },
+  // },
 }

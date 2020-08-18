@@ -29,7 +29,7 @@ export default () => {
         <Input placeholder='hello world' />
       </p>
       <div>
-        <img src={tsLogo}/>
+        <img className={style.img} src='https://select-photo.hunliji.com/Fgqi5RMFl6cKM0m-JdeeLaLFbmkG' />
         <Button />
       </div> 
     </div>
